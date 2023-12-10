@@ -9,16 +9,16 @@ The focus is on clean, simple, and maintainable code, with robust error handling
 The project prioritizes backend functionality and code quality over UI design, as the UI is mainly to showcase that the system works.
 
 
-# Solution Components:
+# Solution Components
 
 -DocPlanner.API: A .Net 8 Asp.Net Core Web API project.
 
 -DocPlanner.Test: A .Net 8 xUnit test Project.
 
-# Requirements:
+# Requirements
 - Latest version of Visual Studio with
 - .Net 8 SDK
 
-# Functionalities:
+# Functionalities
 - Get available slots of work periods
 - Book available slots
