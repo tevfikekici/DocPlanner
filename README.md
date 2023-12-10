@@ -11,13 +11,12 @@ The project prioritizes backend functionality and code quality over UI design, a
 
 # Solution Components
 
--DocPlanner.API: A .Net 8 Asp.Net Core Web API project.
+-.Net 8 Asp.Net Core Web API project.
 
--DocPlanner.Test: A .Net 8 xUnit test Project.
+-.Net 8 xUnit test Project.
 
 # Requirements
-- Latest version of Visual Studio with
-- .Net 8 SDK
+- Latest version of Visual Studio with .Net 8 SDK
 
 # Functionalities
 - Get available slots of work periods
