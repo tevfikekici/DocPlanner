@@ -11,9 +11,8 @@ The project prioritizes backend functionality and code quality over UI design, a
 
 # Solution Components
 
-- .Net 8 Asp.Net Core Web API project.
-
-- .Net 8 xUnit test Project.
+- Asp.Net Core Web API project.
+- xUnit test Project.
 
 # Requirements
 - Latest version of Visual Studio with .Net 8 SDK
