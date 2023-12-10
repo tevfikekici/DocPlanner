@@ -6,8 +6,8 @@ This document provides comprehensive instructions and details for the DocPlanner
 
 ### Solution Components:
 
-    -DocPlanner.API: A .Net 8 Asp.Net Core Web API project.
-    -DocPlanner.Test: A .Net 8 xUnit test Project.
+    -DocPlanner.API: Asp.Net Core Web API project.
+    -DocPlanner.Test: xUnit test Project.
 
 ### Getting Started
 ### Prerequisites:
