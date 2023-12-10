@@ -136,6 +136,7 @@ SOLID Principles observed:
 
 
 OOP Concepts observed:
+
     1. Abstraction: Abstraction is used through the definition of the ISlotService interface, which provides an abstract layer over the implementation details of SlotService.
 
     2. Encapsulation: The code demonstrates encapsulation by keeping the data of the classes private and exposing only the necessary methods to interact with this data. For example, SlotService encapsulates its logic and data, exposing only relevant methods like GetWeeklyAvailabilityAsync.
