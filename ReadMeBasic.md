@@ -4,18 +4,18 @@
 
 This document provides comprehensive instructions and details for the DocPlanner API - a .Net 8 Asp.Net Core Web API project, along with its associated xUnit test project. This solution is designed for booking doctor's appointments and managing available slots.
 
-Solution Components:
+### Solution Components:
 
     -DocPlanner.API: A .Net 8 Asp.Net Core Web API project.
     -DocPlanner.Test: A .Net 8 xUnit test Project.
 
-Getting Started
-Prerequisites:
+### Getting Started
+### Prerequisites:
 
     -Latest version of Visual Studio.
     -.Net 8 Framework and necessary Nuget Packages.
 
-Running the REST API:
+### Running the REST API:
 
     -Download the solution from the Git repository .
     -Unzip the solution, if necessary.
@@ -24,11 +24,11 @@ Running the REST API:
     -Set DocPlanner.API as the startup project.
     -Start the application from Visual Studio.
 
-Using the UI:
+### Using the UI:
 
 The DocPlanner.API runs Swagger UI in the browser, providing GET and POST functionalities. 
 
-GET Functionality
+### GET Functionality
 
     -Click on the blue "GET" button.
     -Select "Try it out" in the top right corner of the blue box.
@@ -36,7 +36,7 @@ GET Functionality
     -Click "Execute".
     -Review "Code" and "Response Body" for server responses.
 
-POST Functionality
+### POST Functionality
 
     -Click on the green "POST" button.
     -Select "Try it out" in the top right corner of the green box.
@@ -44,25 +44,25 @@ POST Functionality
     -Click "Execute".
     -Review "Code" and "Response Body" for server responses.
 
-Running the Unit Tests:
+### Running the Unit Tests:
 
     -In Visual Studio, go to the "View" menu and select "Test Explorer".
     -Run all tests using the "Run all tests" button.
     -Check for passing tests indicated by green status.
 
-Observations:
+### Observations:
 
     -GET requests return 200 status codes with JSON data for valid inputs and error messages for 400, 500 status codes.
     -POST requests return specific status codes and messages based on input validity and completeness.
 
-Design Patterns Observed:
+### Design Patterns Observed:
 
 The solution employs various design patterns including Repository Pattern, Dependency Injection, 
 Service Layer Pattern, Middleware Pattern, MVC, Factory Pattern, Adapter Pattern, Singleton Pattern, 
 Command Pattern, and DTO Pattern for efficient and structured code management.
 
 
-Suggested User Story:
+### Suggested User Story:
 
 Title: Implement a Slot Booking System for Doctor's Appointments
 
