@@ -12,6 +12,7 @@ The project prioritizes backend functionality and code quality over UI design, a
 # Solution Components:
 
 -DocPlanner.API: A .Net 8 Asp.Net Core Web API project.
+
 -DocPlanner.Test: A .Net 8 xUnit test Project.
 
 # Requirements:
