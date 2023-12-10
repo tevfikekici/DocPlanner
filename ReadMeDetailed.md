@@ -128,27 +128,22 @@ During the development it was intended to keep the solution as simple as possibl
 
 SOLID Principles observed:
 
-    1. Single Responsibility Principle (SRP): Each class in the code seems to have a single responsibility. For instance, SlotService is responsible for handling operations related to slot bookings. This principle ensures that each class has only one reason to change, making the code more maintainable.
-
+    1. Single Responsibility Principle (SRP): Each class in the code have a single responsibility. For instance, SlotService is responsible for handling operations related to slot bookings. This principle ensures that each class has only one reason to change, making the code more maintainable.
     2. Open/Closed Principle (OCP): By using interfaces like ISlotService, the code demonstrates adherence to the Open/Closed Principle. The system is open for extension (you can implement different versions of ISlotService) but closed for modification, as changes to SlotService do not require modifications in the classes that use it.
-
     3. Liskov Substitution Principle (LSP): Although not explicitly demonstrated due to the lack of class inheritance and polymorphism in the provided code, the use of interfaces hints at adherence to LSP, where derived classes must be substitutable for their base classes.
-
-    4. Interface Segregation Principle (ISP): The ISlotService interface seems to be segregated based on specific functionalities related to slot services, adhering to ISP by not forcing the implementing classes to depend on methods they do not use.
-
-    5. **Dependency Inversion Principle (DIP)**: The code demonstrates this principle by depending on abstractions (ISlotService interface) rather than concrete implementations. This is evident in the constructor injection used in AvailabilityController where it depends on ISlotService.
+    4. Interface Segregation Principle (ISP): The ISlotService interface is segregated based on specific functionalities related to slot services, adhering to ISP by not forcing the implementing classes to depend on methods they do not use.
+    5. Dependency Inversion Principle (DIP): The code demonstrates this principle by depending on abstractions (ISlotService interface) rather than concrete implementations. This is evident in the constructor injection used in AvailabilityController where it depends on ISlotService.
 
 
-
-
-
-
-
-
+OOP Concepts observed:
+    1. Abstraction: Abstraction is used through the definition of the ISlotService interface, which provides an abstract layer over the implementation details of SlotService.
+    2. Encapsulation: The code demonstrates encapsulation by keeping the data of the classes private and exposing only the necessary methods to interact with this data. For example, SlotService encapsulates its logic and data, exposing only relevant methods like GetWeeklyAvailabilityAsync.
+    3. Inheritance: While explicit inheritance is not visible in the provided code (no class is extending another class), the use of interfaces can be considered a form of inheritance. It defines a contract that other classes can implement.
+    4. Polymorphism: Through the use of interfaces (like ISlotService), the code implicitly uses polymorphism. Different classes can implement ISlotService, and the consuming code (like AvailabilityController) can use these implementations interchangeably.
+    5. Dependency Injection: This is more of a design pattern but is crucial in OOP for reducing coupling between classes. The use of constructor injection in AvailabilityController for ISlotService is an example of dependency injection.
 
 
 Suggested User Story:
-
 User Story: Doctor's Appointment Slot Booking System
 
 Title: Implement a Slot Booking System for Doctor's Appointments
