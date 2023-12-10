@@ -1,21 +1,21 @@
-DocPlanner API Readme
+# DocPlanner API Readme
 
-Introduction
+### Introduction
 
 This document provides comprehensive instructions and details for the DocPlanner API - a .Net 8 Asp.Net Core Web API project, along with its associated xUnit test project. This solution is designed for booking doctor's appointments and managing available slots.
 
-Solution Components:
+### Solution Components:
 
     -DocPlanner.API: A .Net 8 Asp.Net Core Web API project.
     -DocPlanner.Test: A .Net 8 xUnit test Project.
 
-Getting Started
-Prerequisites:
+### Getting Started
+### Prerequisites:
 
     -Latest version of Visual Studio.
     -.Net 8 Framework and necessary Nuget Packages.
 
-Running the REST API:
+### Running the REST API:
 
     -Download the solution from the Git repository,
     -Unzip the solution, if necessary,
@@ -25,30 +25,12 @@ Running the REST API:
     -Set DocPlanner.API as the startup project,
     -Start the application from Visual Studio.
 
-Using the UI:
-
-The DocPlanner.API runs Swagger UI in the browser, providing GET and POST functionalities.
-GET Functionality
-
-    -Click on the blue "GET" button.
-    -Select "Try it out" in the top right corner of the blue box.
-    -Enter a valid date (YYYYMMDD format) in the required field.
-    -Click "Execute".
-    -Review "Code" and "Response Body" for server responses.
-
-POST Functionality
-
-    -Click on the green "POST" button.
-    -Select "Try it out" in the top right corner of the green box.
-    -Enter valid JSON data in the Request body text box.
-    -Click "Execute".
-    -Review "Code" and "Response Body" for server responses.
-Using the UI:
+### Using the UI:
 
 The DocPlanner.API runs Swagger UI in the browser, providing GET and POST functionalities. 
 When you run the DocPlanner.API you will see Swagger running on browser.
 
-GET Functionality
+### GET Functionality
 
     -Click on the blue "GET" button.
     -Select "Try it out" in the top right corner of the blue box.
@@ -56,7 +38,7 @@ GET Functionality
     -Click "Execute".
     -Review "Code" and "Response Body" for server responses.
 
-POST Functionality
+### POST Functionality
 
     -Click on the green "POST" button.
     -Select "Try it out" in the top right corner of the green box.
@@ -77,7 +59,7 @@ POST Functionality
     -Click "Execute".
     -Review "Code" and "Response Body" for server responses.
 
-Running the Unit Tests:
+### Running the Unit Tests:
 
     -In Visual Studio, go to the "View" menu and select "Test Explorer".
     -Run all tests using the "Run all tests" button.
@@ -86,7 +68,7 @@ Running the Unit Tests:
 	   - TakeSlot_ReturnsOkResult_WhenSlotBookingIsSuccessful
 	   - TakeSlot_ReturnsBadRequest_WhenServiceReturnsError
 
-Observations:
+### Observations:
 
     GET request on service:
     Service returns:
@@ -111,7 +93,7 @@ Observations:
     - 400 status code with error message for null, invalid and required json object fields
     - 200 status was not observed.
 
-Design Patterns Observed:
+### Design Patterns Observed:
 
 During the development it was intended to keep the solution as simple as possible to align with acceptance criteria with no abuse of design patterns, how ever below are observed design patterns in the solution,
 
@@ -126,7 +108,7 @@ During the development it was intended to keep the solution as simple as possibl
     9. Command Pattern: The methods in ISlotService, which encapsulate all information needed to perform an action or trigger an event, thereby allowing for parameterization of clients with different requests.
     Data Transfer Object (DTO) Pattern: Classes like WeeklyAvailability, BusySlot, and SlotBooking are used as DTOs. They are simple objects used to transfer data across layers and boundaries of the application, particularly in network calls.
 
-SOLID Principles observed:
+### SOLID Principles observed:
 
     1. Single Responsibility Principle (SRP): Each class in the code have a single responsibility. For instance, SlotService is responsible for handling operations related to slot bookings. This principle ensures that each class has only one reason to change, making the code more maintainable.
     2. Open/Closed Principle (OCP): By using interfaces like ISlotService, the code demonstrates adherence to the Open/Closed Principle. The system is open for extension (you can implement different versions of ISlotService) but closed for modification, as changes to SlotService do not require modifications in the classes that use it.
@@ -135,7 +117,7 @@ SOLID Principles observed:
     5. Dependency Inversion Principle (DIP): The code demonstrates this principle by depending on abstractions (ISlotService interface) rather than concrete implementations. This is evident in the constructor injection used in AvailabilityController where it depends on ISlotService.
 
 
-OOP Concepts observed:
+### OOP Concepts observed:
 
     1. Abstraction: Abstraction is used through the definition of the ISlotService interface, which provides an abstract layer over the implementation details of SlotService.
     2. Encapsulation: The code demonstrates encapsulation by keeping the data of the classes private and exposing only the necessary methods to interact with this data. For example, SlotService encapsulates its logic and data, exposing only relevant methods like GetWeeklyAvailabilityAsync.
@@ -144,7 +126,7 @@ OOP Concepts observed:
     5. Dependency Injection: This is more of a design pattern but is crucial in OOP for reducing coupling between classes. The use of constructor injection in AvailabilityController for ISlotService is an example of dependency injection.
 
 
-Suggested User Story:
+### Suggested User Story:
 User Story: Doctor's Appointment Slot Booking System
 
 Title: Implement a Slot Booking System for Doctor's Appointments
