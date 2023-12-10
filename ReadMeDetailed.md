@@ -3,13 +3,14 @@ DocPlanner API Readme
 Introduction
 
 This document provides comprehensive instructions and details for the DocPlanner API - a .Net 8 Asp.Net Core Web API project, along with its associated xUnit test project. This solution is designed for booking doctor's appointments and managing available slots.
-Solution Components
+
+Solution Components:
 
     -DocPlanner.API: A .Net 8 Asp.Net Core Web API project.
     -DocPlanner.Test: A .Net 8 xUnit test Project.
 
 Getting Started
-Prerequisites
+Prerequisites:
 
     -Latest version of Visual Studio.
     -.Net 8 Framework and necessary Nuget Packages.
