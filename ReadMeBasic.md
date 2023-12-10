@@ -27,6 +27,7 @@ Running the REST API:
 Using the UI:
 
 The DocPlanner.API runs Swagger UI in the browser, providing GET and POST functionalities. 
+
 GET Functionality
 
     -Click on the blue "GET" button.
