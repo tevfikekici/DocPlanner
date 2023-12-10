@@ -90,7 +90,7 @@ Observations:
 
     GET request on service:
     Service returns:
-      - 200 status code with Json data in Response body using valid parameter: 20231120 
+     - 200 status code with Json data in Response body using valid parameter: 20231120 
      - 400, 500 etc. status codes with error messages.
 
     POST request on service:
@@ -125,6 +125,26 @@ During the development it was intended to keep the solution as simple as possibl
     8. Singleton Pattern: The usage of logging (e.g., ILogger<ExceptionMiddleware>) and configuration (HttpClient) typically employs the Singleton pattern, where a single instance is used throughout the application's lifetime.
     9. Command Pattern: The methods in ISlotService, which encapsulate all information needed to perform an action or trigger an event, thereby allowing for parameterization of clients with different requests.
     Data Transfer Object (DTO) Pattern: Classes like WeeklyAvailability, BusySlot, and SlotBooking are used as DTOs. They are simple objects used to transfer data across layers and boundaries of the application, particularly in network calls.
+
+SOLID Principles observed:
+
+    1. Single Responsibility Principle (SRP): Each class in the code seems to have a single responsibility. For instance, SlotService is responsible for handling operations related to slot bookings. This principle ensures that each class has only one reason to change, making the code more maintainable.
+
+    2. Open/Closed Principle (OCP): By using interfaces like ISlotService, the code demonstrates adherence to the Open/Closed Principle. The system is open for extension (you can implement different versions of ISlotService) but closed for modification, as changes to SlotService do not require modifications in the classes that use it.
+
+    3. Liskov Substitution Principle (LSP): Although not explicitly demonstrated due to the lack of class inheritance and polymorphism in the provided code, the use of interfaces hints at adherence to LSP, where derived classes must be substitutable for their base classes.
+
+    4. Interface Segregation Principle (ISP): The ISlotService interface seems to be segregated based on specific functionalities related to slot services, adhering to ISP by not forcing the implementing classes to depend on methods they do not use.
+
+    5. **Dependency Inversion Principle (DIP)**: The code demonstrates this principle by depending on abstractions (ISlotService interface) rather than concrete implementations. This is evident in the constructor injection used in AvailabilityController where it depends on ISlotService.
+
+
+
+
+
+
+
+
 
 
 Suggested User Story:
