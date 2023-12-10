@@ -16,12 +16,12 @@ Prerequisites
 
 Running the REST API:
 
-    -Download the solution from Git repository in the link: link….
-    -Unzip the solution, if necessary.
+    -Download the solution from the Git repository,
+    -Unzip the solution, if necessary,
     -Make sure you have latest version of Visual Studio,
-    -Open the solution by double-clicking on DocPlanner.API.sln.
-    -Build the solution, ensuring all Nuget Packages and frameworks are installed.
-    -Set DocPlanner.API as the startup project.
+    -Open the solution by double-clicking on DocPlanner.API.sln,
+    -Build the solution, ensuring all Nuget Packages and frameworks are installed,
+    -Set DocPlanner.API as the startup project,
     -Start the application from Visual Studio.
 
 Using the UI:
@@ -139,32 +139,32 @@ So that patients can view available slots on a weekly basis and book appointment
 Acceptance Criteria:
 
     1. RESTful API Creation:
-         • The API should be developed in C#, following the latest Visual Studio solution standards.
-         • It must interact with the slot service for handling appointment slots, abstracting the work period management from the front end.
+         â€¢ The API should be developed in C#, following the latest Visual Studio solution standards.
+         â€¢ It must interact with the slot service for handling appointment slots, abstracting the work period management from the front end.
     2. User Interface:
-         • A basic UI (like Swagger or a simple custom interface) should be provided to demonstrate the API functionality.
-         • The UI should not interact directly with the slot service but through the C# API.
+         â€¢ A basic UI (like Swagger or a simple custom interface) should be provided to demonstrate the API functionality.
+         â€¢ The UI should not interact directly with the slot service but through the C# API.
     3. Code Quality and Standards:
-         • The solution should adhere to the KISS principle, ensuring simplicity and maintainability.
-         • Appropriate design patterns should be used without overcomplicating the solution.
-         • The code must be clean, solid, and demonstrate good unit testing practices.
-         • Error handling should be robust and clear, ensuring a smooth user experience.
+         â€¢ The solution should adhere to the KISS principle, ensuring simplicity and maintainability.
+         â€¢ Appropriate design patterns should be used without overcomplicating the solution.
+         â€¢ The code must be clean, solid, and demonstrate good unit testing practices.
+         â€¢ Error handling should be robust and clear, ensuring a smooth user experience.
     4. Documentation and Setup:
-         • Comprehensive instructions and observations for running the application should be included.
-         • The entire codebase should be stored in a publicly accessible git repository for evaluation.
+         â€¢ Comprehensive instructions and observations for running the application should be included.
+         â€¢ The entire codebase should be stored in a publicly accessible git repository for evaluation.
     5. Functionality:
-         • Users should be able to view available slots by week and book appointments by selecting a slot and filling in the required data.
-         • Slot availability and booking should follow the format and endpoints provided (e.g., GET for availability, POST for booking).
+         â€¢ Users should be able to view available slots by week and book appointments by selecting a slot and filling in the required data.
+         â€¢ Slot availability and booking should follow the format and endpoints provided (e.g., GET for availability, POST for booking).
     6. Testing and Evaluation:
-        • The solution should include test projects that demonstrate the functionality and robustness of the code.
-        • The application should be easily configurable and quick to run.
+        â€¢ The solution should include test projects that demonstrate the functionality and robustness of the code.
+        â€¢ The application should be easily configurable and quick to run.
     7. Non-Requirements:
-        • The UI is not a primary evaluation criterion; it’s only to prove the solution works.
-        • Avoid unnecessary complexities such as user login/password handling or setting up a local database.
+        â€¢ The UI is not a primary evaluation criterion; itâ€™s only to prove the solution works.
+        â€¢ Avoid unnecessary complexities such as user login/password handling or setting up a local database.
 
 Notes:
 
-    • The provided API endpoints and data structures (e.g., slot duration, work periods, facility details) must be adhered to.
-    • Common mistakes like directly consuming the slot service from the front end or adding unnecessary complexity should be avoided.
+    â€¢ The provided API endpoints and data structures (e.g., slot duration, work periods, facility details) must be adhered to.
+    â€¢ Common mistakes like directly consuming the slot service from the front end or adding unnecessary complexity should be avoided.
 
 This user story is crafted to guide the development process within the Scrum framework, focusing on delivering a functional, high-quality solution that meets the outlined requirements and expectations.
