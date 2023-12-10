@@ -137,9 +137,13 @@ SOLID Principles observed:
 
 OOP Concepts observed:
     1. Abstraction: Abstraction is used through the definition of the ISlotService interface, which provides an abstract layer over the implementation details of SlotService.
+
     2. Encapsulation: The code demonstrates encapsulation by keeping the data of the classes private and exposing only the necessary methods to interact with this data. For example, SlotService encapsulates its logic and data, exposing only relevant methods like GetWeeklyAvailabilityAsync.
+
     3. Inheritance: While explicit inheritance is not visible in the provided code (no class is extending another class), the use of interfaces can be considered a form of inheritance. It defines a contract that other classes can implement.
+
     4. Polymorphism: Through the use of interfaces (like ISlotService), the code implicitly uses polymorphism. Different classes can implement ISlotService, and the consuming code (like AvailabilityController) can use these implementations interchangeably.
+
     5. Dependency Injection: This is more of a design pattern but is crucial in OOP for reducing coupling between classes. The use of constructor injection in AvailabilityController for ISlotService is an example of dependency injection.
 
 
