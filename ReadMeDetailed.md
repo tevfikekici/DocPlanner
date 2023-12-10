@@ -70,12 +70,12 @@ When you run the DocPlanner.API you will see Swagger running on browser.
 
 ### Observations:
 
-    GET request on service:
+  ####  GET request on service:
     Service returns:
      - 200 status code with Json data in Response body using valid parameter: 20231120 
      - 400, 500 etc. status codes with error messages.
 
-    POST request on service:
+   #### POST request on service:
     Service returns:
        - 400 status code with BadRequest - "Valid slot required" message in Response body using example json data explained as below:
     {
@@ -135,7 +135,7 @@ As a software developer,
 I want to create a RESTful API in C# that interfaces with a slot service for booking doctor's appointments,
 So that patients can view available slots on a weekly basis and book appointments easily without handling work periods directly.
 
-Acceptance Criteria:
+#### Acceptance Criteria:
 
     1. RESTful API Creation:
          • The API should be developed in C#, following the latest Visual Studio solution standards.
@@ -161,7 +161,7 @@ Acceptance Criteria:
         • The UI is not a primary evaluation criterion; it’s only to prove the solution works.
         • Avoid unnecessary complexities such as user login/password handling or setting up a local database.
 
-Notes:
+#### Notes:
 
     • The provided API endpoints and data structures (e.g., slot duration, work periods, facility details) must be adhered to.
     • Common mistakes like directly consuming the slot service from the front end or adding unnecessary complexity should be avoided.
