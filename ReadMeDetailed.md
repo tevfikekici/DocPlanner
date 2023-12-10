@@ -129,7 +129,7 @@ During the development it was intended to keep the solution as simple as possibl
 
 Suggested User Story:
 
-TUser Story: Doctor's Appointment Slot Booking System
+User Story: Doctor's Appointment Slot Booking System
 
 Title: Implement a Slot Booking System for Doctor's Appointments
 
