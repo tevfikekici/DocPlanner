@@ -1,4 +1,4 @@
-DocPlanner API Readme
+# DocPlanner API Readme
 
 Introduction
 
